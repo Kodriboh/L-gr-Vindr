@@ -1,6 +1,6 @@
 # Lágr-Vindr
 
-Lágr-Vindr (old Norse for "low-wind) is an opinionated template built atop of the popular Express framework. 
+Lágr-Vindr (old Norse for "low-wind") is an opinionated template built atop of the popular Express framework. 
 
 It is aimed at aspiring developers to give a sense of structure when starting Node projects. Coming from a PHP background, this has been heavily inspired by how Laravel handles it's underlying architecture. 
 
