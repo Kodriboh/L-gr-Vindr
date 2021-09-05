@@ -14,4 +14,10 @@ app.set('views', path.join('./', 'views'));
 
 app.start = include('/utils/overrides.js').listen(app);
 
+const webRoutes = include('/routes/web');
+const apiRoutes = include('/routes/api');
+
+app.use(apiRoutes);
+app.use(webRoutes);
+
 module.exports = { app };
