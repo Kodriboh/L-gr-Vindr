@@ -27,3 +27,16 @@ We recommend setting a default and having settings read-in from a .env file to a
 ## Overrides
 
 If you wish to override the express "app" object features please use the overrides.js file in utils, you can then add your own properties to the express app. This is seen within our "start" function which creates a new function on the express app, this calls the listen method with default logging settings, and whilst reading the port number from the config file directly, leading to a cleaner syntax in our main app.js. Be wary if you choose to replace any functionality in Express, the safest option is to add new properties without removing or overwriting others. 
+
+## Scripts
+
+We have added various dev scripts to the package.json. This is intended to 
+make development easier. We use Yarn as our default package manager (see yarn docs).
+
+You can start the app for development using <code>yarn start-dev</code>, this will 
+fire up the app using nodemon with --trace-sync-io for detecting synchronous code.
+We also have a watch command <code>yarn watch</code> for compiling SCSS, although
+there is also a gruntfile allowing for you to use grunt watch if preferred.
+
+To contrast, <code>yarn start</code> will run the app under pm2 for production use. 
+<code>yarn live</code> will run a live nodemon server without addons. You may also manually compile SCSS using <code>yarn sass-compile</code>.
