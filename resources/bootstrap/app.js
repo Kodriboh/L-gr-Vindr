@@ -1,10 +1,10 @@
 'use strict';
 
 require('dotenv').config();
+
 const { mongo : db } = include('/config/database.js');
 
 const path = require('path');
-const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
 
