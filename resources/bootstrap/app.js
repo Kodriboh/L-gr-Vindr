@@ -2,7 +2,7 @@
 
 require('dotenv').config();
 
-const { mongo : db } = include('/config/database.js');
+const db = include('/utils/databaseSelector.js');
 
 const path = require('path');
 const express = require('express');
