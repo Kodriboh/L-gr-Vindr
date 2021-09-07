@@ -11,7 +11,7 @@ const config = {
         dbname: process.env.DB_NAME || 'appDb',
     },
     postgres: {
-        name: 'psql',
+        name: 'pgsql',
         port: process.env.DB_PORT || 54324,
         dbname: process.env.DB_NAME || 'appDb',
     },
@@ -19,8 +19,8 @@ const config = {
 
 // Aliases 
 config.mariaDb = config.mysql;
-config.psql = config.postgres;
+config.pgsql = config.postgres;
 
 module.exports.mongo = config.mongo;
 module.exports.mysql = config.mysql;
-module.exports.psql = config.psql;
+module.exports.pgsql = config.pgsql;
