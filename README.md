@@ -40,3 +40,8 @@ there is also a gruntfile allowing for you to use grunt watch if preferred.
 
 To contrast, <code>yarn start</code> will run the app under pm2 for production use. 
 <code>yarn live</code> will run a live nodemon server without addons. You may also manually compile SCSS using <code>yarn sass-compile</code>.
+
+## Database
+
+Lágr-Vindr comes packed with a database configuration for mongo ready to go. Simply set up your environment variables as in the .env.example
+and run the docker-compose file <code>docker-compose up --build -d</code>. Additional configurations are supported in the auto configuration by changing the DB environment variables: pgsql, mysql, mariadb, additional configuration may be necessary via the provided config.js files.
