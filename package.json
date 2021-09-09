@@ -13,7 +13,8 @@
     "live": "nodemon app.js",
     "start-dev": "nodemon app --trace-sync-io",
     "sass-compile": "node-sass --include-path scss resources/sass/main.scss public/css/main.css",
-    "watch": "nodemon -e scss -x \"npm run sass-compile\""
+    "watch": "nodemon -e scss -x \"npm run sass-compile\"",
+    "seed": "node ./database/seeder.js"
   },
   "devDependencies": {
     "debug": "^4.3.2",
