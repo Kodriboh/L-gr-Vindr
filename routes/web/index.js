@@ -6,7 +6,7 @@ router.get('/', (req, res) => (
     res.render('index')
 ));
 
-router.get('*', (req, res) => {
+router.all('*', (req, res) => {
     res.status(400).render('404')
 });
 
